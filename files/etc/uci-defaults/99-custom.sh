@@ -122,6 +122,7 @@ uci set firewall.@forwarding[-1].dest='docker'
 
 # 设置所有网口可连接 SSH
 # uci set dropbear.@dropbear[0].Interface=''
+uci set dropbear.@dropbear[0].PasswordAuth='on'
 uci commit
 
 # 设置编译作者信息
